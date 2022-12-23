@@ -1,0 +1,283 @@
+.loder_bg{
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loder
+{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loder:before, .loder:after{
+    content: '';
+    border: 15px solid orange;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loder 2s linear infinite;
+    opacity: 0;
+}
+.loder:before{ animation-delay: .5s; }
+@keyframes loder{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.loder h3{
+	position: absolute;
+    top: 160px;
+    left: 30px;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.header
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(img/maharan.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top:20px;
+	text-align: center;
+	color: #fff;
+}
+.header h2
+{
+	font-size: 25px;
+	float: left;
+}
+.header h1
+{
+	padding-top: 260px;
+	padding-bottom: 0;
+	font-size: 55px;
+	
+}
+.header p
+{
+	margin: 18px 0;
+}
+
+/* features */
+
+.features
+{
+	padding: 100px 0;
+}
+ h1
+{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.feature-Img img
+{
+	width: 100%;
+}
+.price
+{
+	width: 50px;
+	height: 50px;
+	background: #ff5722;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+	position: absolute;
+	left: 20px;
+	bottom: -25px;
+}
+.feature-Img
+{
+	position: relative;
+}
+.rating
+{
+	padding: 3px;
+	float: right;
+	background: #fff;
+	bottom: -1px;
+	right: 0;
+	position: absolute;
+}
+.features .fa
+{
+	font-size: 15px;
+	color: #ff5722;
+}
+.feature-details{
+	padding: 20px;
+	text-align: justify;
+}
+.feature-details h4{
+	font-weight: 600;
+	margin-top: 20px;
+}
+.feature-details .fa
+{
+	margin-right: 2px;
+}
+.feature-Box
+{
+	box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+	margin-bottom: 30px;
+}
+
+/*gallery*/
+
+.gallery
+{
+	background: #efefef;
+	padding: 100px 0;
+}
+
+.gallery-Box img
+{
+	width: 100%;
+	height: 150px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.gallery-Box img:hover
+{
+	transform: scale(1.1);
+}
+.gallery-Box h4
+{   display: block;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: -2px 2px 2px #000;
+	font-weight: 600;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+} 
+.gallery-Box {position: relative; margin-bottom: 30px;}
+
+.banner
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(37,73,214,0.18),rgba(37,73,214,0.18)),url(img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	padding-top: 14%;
+}
+.banner-hightlights
+{
+	padding: 70px 0;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #fff;
+}
+.book-btn
+{
+	width: 120px;
+	padding: 8px 0;
+	outline: none !important;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	background: transparent;
+	color: #fff;
+	margin-top: 20px;
+}
+.user-feedbk
+{
+	padding: 100px 0;
+}
+.user-review
+{
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0,0,100,0.2);
+	padding-bottom: 50px;
+}
+.user-review p
+{
+	padding: 25px 10px 10px 10px;
+}
+.user-review .fa-quote-right
+{
+	font-size: 30px;
+	color: #9610fd;
+	margin-top: 10px;
+}
+
+
+.user-feedbk img
+{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	margin: -30px 0 20px 40%;
+}
+.footer
+{
+	padding: 100px 20px 15px;
+	background-image: linear-gradient(120deg,#2d557d,#9610fd); 
+	color: #fff;
+}
+.footer-logo
+{
+	width: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer h4	
+{
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.footer p
+{
+	font-size: 15px;
+	text-align: justify;
+	padding-right: 20px;
+}
+.footer .row .fa
+{
+	padding-right:20px;
+	font-size: 15px;
+}
+.footer hr
+{
+	margin-top: 10px;
+	background: #fff;
+}
+.fa-heart
+{
+	margin: 0 5px;
+	color: #ff0000;
+}
+
+.footer .copyright
+{
+	text-align: center;
+}
